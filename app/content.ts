@@ -13,7 +13,7 @@ export const profile = {
   introLead: "Software engineer at ",
   introCompany: "Indus Novateur",
   introTail:
-    ". I build cloud-native platforms and distributed, event-driven backend systems — React, Next.js, TypeScript, Node.js, and REST APIs.",
+    ". I turn research into production — a published LLM researcher (arXiv), building end-to-end with NestJS, Next.js, TypeScript, CI/CD, and Azure.",
   availability:
     "Always happy to talk backend, AI, or a good engineering problem.",
   email: "thasinaadil@gmail.com",
@@ -42,13 +42,15 @@ export const experience: Experience[] = [
     body:
       "Building core modules of a cloud-native, microservices-based enterprise platform. Contributing to REST API and relational schema design for distributed data workflows, with CI/CD on Azure DevOps and infrastructure-as-code for service deployment.",
     stack: [
-      "React",
+      "NestJS",
       "Next.js",
       "TypeScript",
       "Node.js",
+      "React",
       "PostgreSQL",
       "Azure App Service",
       "Azure DevOps",
+      "CI/CD",
     ],
   },
   {
@@ -131,6 +133,7 @@ export const skills: SkillGroup[] = [
   {
     label: "DevOps & Tools",
     items: [
+      "CI/CD",
       "Docker",
       "Azure App Service",
       "Azure DevOps",
