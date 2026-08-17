@@ -128,7 +128,7 @@ export const skills: SkillGroup[] = [
   },
   {
     label: "Databases",
-    items: ["PostgreSQL", "MySQL", "MongoDB"],
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Prisma ORM"],
   },
   {
     label: "DevOps & Tools",
