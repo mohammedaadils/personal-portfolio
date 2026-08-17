@@ -42,6 +42,7 @@ html {
 
 body {
   min-height: 100vh;
+  overflow-x: hidden;
   color: var(--text);
   font-family: var(--font-sans);
   line-height: 1.55;
@@ -164,6 +165,17 @@ h1, h2, h3 {
 .nav-links a.active::before {
   content: "+ ";
   color: var(--faint);
+}
+
+/* On phones the 6 links don't fit — hide them (brand still scrolls to top,
+   sections are reached by scrolling). */
+@media (max-width: 720px) {
+  .brand {
+    white-space: nowrap;
+  }
+  .nav-links {
+    display: none;
+  }
 }
 
 /* ============================================================
