@@ -1,54 +1,95 @@
-# Personal Portfolio
+# Mohammed Aadil S
 
-An editorial, single-page portfolio built with **Next.js 16**, **React 19**, **TypeScript**, and **Tailwind CSS v4** — modeled on the layout/design of the reference site, with your own content.
+**Software Engineer** — full-stack, backend & AI. Based in Chennai, India.
 
-## Run locally
+Full-stack engineer with published research on LLM-based REST API automation
+(arXiv, 2024). Currently building cloud-native, microservices-based platforms
+with React, Next.js, TypeScript, Node.js, and PostgreSQL on Azure — with a focus
+on distributed, event-driven backend systems and REST API design.
+
+[LinkedIn](https://www.linkedin.com/in/mohammed-aadil-48389a25a) ·
+[GitHub](https://github.com/mohammedaadils) ·
+[Medium](https://medium.com/@thasinaadil_10046) ·
+[Email](mailto:thasinaadil@gmail.com)
+
+---
+
+## Experience
+
+**Software Engineer** — Indus Novateur Softech · Chennai · *Jun 2026 – Present*
+Building core modules of a cloud-native, microservices-based enterprise platform.
+Contributing to REST API and relational schema design for distributed data
+workflows, with CI/CD on Azure DevOps and infrastructure-as-code for deployment.
+`React` `Next.js` `TypeScript` `Node.js` `PostgreSQL` `Azure`
+
+**Web Development Intern** — Plasmid · Chennai · *Jul 2024 – Sep 2024*
+Built responsive UI components across 4+ web modules, reducing reported frontend
+issues by ~30% and improving cross-device UX.
+`HTML` `CSS` `JavaScript`
+
+**SDE Intern** — Tactii (formerly TalentAccurate) · Toronto (Remote) · *Aug 2023 – Apr 2024*
+Built 5+ backend APIs generating REST API test cases from natural-language
+prompts (~60% less manual QA). Integrated GPT-2 with prompt engineering for
+Postman-compatible test cases at ~80% structural accuracy across 200+ prompts.
+`Python` `Flask` `FastAPI` `GPT-2` `PyTorch`
+
+---
+
+## Projects
+
+- **[Webhook Delivery Engine](https://github.com/mohammedaadils/webhook-engine)** —
+  Async, event-driven fan-out engine delivering HTTP POST webhooks with
+  per-attempt tracking, exponential-backoff retries, and SQL-persisted audit
+  logs. Dockerized, deployed on AWS EC2. `Java` `Spring Boot` `JPA` `MySQL` `Docker`
+
+- **[Automatic Testcase Generator](https://github.com/kactlabs/test-case-generation)** —
+  AI tool generating Postman-compatible API test cases from natural-language
+  prompts (~65% less authoring time). Basis for the arXiv 2024 paper.
+  `Python` `Flask` `GPT-2` `Transformers` `PyTorch`
+
+- **[DeepMorph — AI DNA Mutation Prediction](https://github.com/mohammedaadils/DeepMorph--AI-DNA-Mutation-Prediction)**
+  ([live](https://deepmorph-ai-dna-mutation-prediction.onrender.com/)) —
+  Hybrid CNN–LSTM multi-task model predicting mutation status, gene
+  classification, and clinical significance, served via FastAPI.
+  `Python` `PyTorch` `CNN-LSTM` `FastAPI` `NumPy`
+
+---
+
+## Research
+
+**[Automating REST API Postman Test Cases Using LLM](https://arxiv.org/abs/2404.10678)**
+— arXiv, April 2024. A method to automatically generate REST API test cases
+using large language models, improving testing efficiency and reducing manual QA
+effort.
+
+---
+
+## Skills
+
+- **Languages:** JavaScript, TypeScript, Python, Java, SQL, C/C++
+- **Frontend:** React, Next.js, HTML, CSS, Responsive UI/UX
+- **Backend:** Node.js, NestJS, Spring Boot, FastAPI, Flask, REST APIs, Microservices, Distributed Systems
+- **AI / LLM:** Prompt Engineering, LLM Integration, Hugging Face Transformers, PyTorch, TensorFlow
+- **Databases:** PostgreSQL, MySQL, MongoDB
+- **DevOps & Tools:** Docker, Azure App Service, Azure DevOps, Infrastructure-as-Code, GitHub Actions, AWS, Git, Linux, Postman
+
+---
+
+## Education
+
+**B.Tech, Computer Science & Engineering** — B.S. Abdur Rahman Crescent Institute
+of Science and Technology, Vandalur, Chennai · *2022 – 2026* · CGPA 8.54
+
+---
+
+## About this repository
+
+This repo is the source of my personal portfolio website, built with **Next.js 16**,
+**React 19**, **TypeScript**, and **Tailwind CSS v4**.
 
 ```bash
 npm install
-npm run dev
+npm run dev      # http://localhost:3000
 ```
 
-Open http://localhost:3000.
-
-## Where to edit content
-
-Everything is placeholder until you drop in real details. All editable content lives in two files:
-
-| What | File |
-| --- | --- |
-| Name, tagline, location, intro, email, social links | `app/content.ts` → `profile` |
-| Work experience | `app/content.ts` → `experience` |
-| Skills (grouped) | `app/content.ts` → `skills` |
-| Blog posts | `app/content.ts` → `blogs` |
-| Education | `app/content.ts` → `education` |
-| Projects + case studies | `app/projects-data.ts` |
-
-Search the codebase for `TODO` to find every spot that needs real data.
-
-## Assets to replace
-
-- **Photo** — drop a square image at `public/photo.jpg` and set `profile.photo` to `/photo.jpg`.
-- **Résumé** — replace `public/resume.pdf` with your real PDF.
-- **Favicon** — edit `public/favicon.svg`.
-
-## Deploy to Vercel
-
-1. Push this repo to GitHub.
-2. Import it at https://vercel.com/new.
-3. Vercel auto-detects Next.js — no config needed. Deploy.
-
-## Structure
-
-```
-app/
-  layout.tsx            Root layout, fonts, metadata
-  page.tsx              Landing page (composes all sections)
-  globals.css           Design tokens + editorial styles
-  content.ts            ← main content source of truth
-  projects-data.ts      ← projects, keyed by slug
-  components/           Nav, Hero, Experience, Projects, Skills, Blogs, Education, Contact, Footer
-  projects/[slug]/      Per-project case-study pages (SSG)
-  error.tsx / not-found.tsx / global-error.tsx
-public/                 photo, favicon, resume
-```
+Deployed on Vercel.
