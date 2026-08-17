@@ -8,8 +8,7 @@ import SkillsContent from "./components/SkillsContent";
 import EducationContent from "./components/EducationContent";
 import ContactContent from "./components/ContactContent";
 import Footer from "./components/Footer";
-import { experience, research, education } from "./content";
-import { projects } from "./projects-data";
+import { experience } from "./content";
 
 export default function Home() {
   return (
@@ -22,11 +21,11 @@ export default function Home() {
           <ExperienceContent />
         </AccordionSection>
 
-        <AccordionSection id="projects" title="Selected Projects" count={projects.length}>
+        <AccordionSection id="projects" title="Selected Projects">
           <ProjectsContent />
         </AccordionSection>
 
-        <AccordionSection id="research" title="Research" count={research.length}>
+        <AccordionSection id="research" title="Research">
           <ResearchContent />
         </AccordionSection>
 
@@ -34,7 +33,7 @@ export default function Home() {
           <SkillsContent />
         </AccordionSection>
 
-        <AccordionSection id="education" title="Education" count={education.length}>
+        <AccordionSection id="education" title="Education">
           <EducationContent />
         </AccordionSection>
 
