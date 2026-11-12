@@ -7,7 +7,7 @@
 export const profile = {
   name: "Mohammed Aadil",
   brand: "Mohammed Aadil",
-  descriptor: "Full-Stack, Backend, AI",
+  descriptor: "Backend Engineer, Production AI",
   location: "Chennai, India",
   // Hero intro (sans). The middle phrase is rendered in the accent colour.
   introLead: "Backend engineer, built on first principles. Now shipping ",
@@ -22,7 +22,7 @@ export const profile = {
     medium: "https://medium.com/@thasinaadil_10046",
     resume: "/resume.pdf",
   },
-  photo: "/photo.jpg",
+  photo: "/portrait.jpg",
 };
 
 export const about = {
