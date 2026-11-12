@@ -15,7 +15,7 @@ const mono = JetBrains_Mono({
   variable: "--font-mono-code",
 });
 
-const description = `${profile.introLead}${profile.introCompany}${profile.introTail}`;
+const description = `${profile.introLead}${profile.introAccent}${profile.introTail}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://example.com"),

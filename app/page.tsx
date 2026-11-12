@@ -1,6 +1,7 @@
 import Nav from "./components/Nav";
 import Hero from "./components/Hero";
 import AccordionSection from "./components/AccordionSection";
+import AboutContent from "./components/AboutContent";
 import ExperienceContent from "./components/ExperienceContent";
 import ProjectsContent from "./components/ProjectsContent";
 import ResearchContent from "./components/ResearchContent";
@@ -16,6 +17,10 @@ export default function Home() {
       <Nav />
       <main>
         <Hero />
+
+        <AccordionSection id="about" title="About">
+          <AboutContent />
+        </AccordionSection>
 
         <AccordionSection id="experience" title="Experience" count={experience.length}>
           <ExperienceContent />

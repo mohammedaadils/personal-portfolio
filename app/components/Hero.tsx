@@ -12,7 +12,7 @@ export default function Hero() {
 
         <p className="hero-intro">
           {profile.introLead}
-          <span className="accent">{profile.introCompany}</span>
+          <span className="accent">{profile.introAccent}</span>
           {profile.introTail}
         </p>
       </div>

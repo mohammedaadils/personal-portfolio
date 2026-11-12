@@ -9,11 +9,10 @@ export const profile = {
   brand: "Mohammed Aadil",
   descriptor: "Full-Stack, Backend, AI",
   location: "Chennai, India",
-  // Hero intro (sans). Company is rendered in the accent colour.
-  introLead: "Software engineer at ",
-  introCompany: "Indus Novateur",
-  introTail:
-    ". I turn research into production — a published LLM researcher (arXiv), building end-to-end with NestJS, Next.js, TypeScript, CI/CD, and Azure.",
+  // Hero intro (sans). The middle phrase is rendered in the accent colour.
+  introLead: "Backend engineer, built on first principles. Now shipping ",
+  introAccent: "AI that works in production",
+  introTail: ".",
   availability:
     "Always happy to talk backend, AI, or a good engineering problem.",
   email: "thasinaadil@gmail.com",
@@ -24,6 +23,21 @@ export const profile = {
     resume: "/resume.pdf",
   },
   photo: "/photo.jpg",
+};
+
+export const about = {
+  paragraphs: [
+    "I'm Mohammed Aadil, a backend engineer who learned the discipline before the tools: data modelling, transactions and concurrency, caching, queues, auth, security, observability and system design. That foundation lets me work in any stack, whether TypeScript, Python or Java, without the language getting in the way.",
+    "At work I build multi-tenant B2B SaaS in production: ticketing, SAP-integrated manufacturing tools and ERP modules. On top of that I build AI systems that are measured, not demoed: RAG with citations, reliable agents, and LLM evals that run in CI. I've shipped an AI feature to real users and I'm Microsoft AI-103 certified.",
+  ],
+  paperNote: "Published arXiv author on LLM-driven API test generation.",
+  paperUrl: "https://arxiv.org/abs/2404.10678",
+  highlights: [
+    "Multi-tenant B2B SaaS in production",
+    "AI feature shipped to real users",
+    "Microsoft AI-103 certified",
+    "Published arXiv author",
+  ],
 };
 
 export type Experience = {
